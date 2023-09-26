@@ -24,4 +24,12 @@ public class ConfigReader {
     public static String getPassword() throws IOException {
         return getPropertyObject().getProperty("password");
     }
+
+    public static String getFilePath() throws IOException {
+        return getPropertyObject().getProperty("file_path");
+    }
+
+    public static String getFileName() throws IOException {
+        return getPropertyObject().getProperty("file_name");
+    }
 }
