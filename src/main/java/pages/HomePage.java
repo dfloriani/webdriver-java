@@ -2,9 +2,6 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
-import java.util.List;
 
 public class HomePage {
 
@@ -33,6 +30,11 @@ public class HomePage {
     public KeyPressesPage clickKeyPresses() {
         clickLink("Key Presses");
         return new KeyPressesPage(driver);
+    }
+
+    public AlertsPage clickJSAlerts() {
+        clickLink("JavaScript Alerts");
+        return new AlertsPage(driver);
     }
 
     // private to make sure our tests don't call this
