@@ -42,6 +42,11 @@ public class HomePage {
         return new FileUploadPage(driver);
     }
 
+    public WysiwygEditorPage clickWysiwygEditor() {
+        clickLink("WYSIWYG Editor");
+        return new WysiwygEditorPage(driver);
+    }
+
     // private to make sure our tests don't call this
     private void clickLink(String linkText) {
         driver.findElement(By.linkText(linkText)).click();
